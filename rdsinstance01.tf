@@ -5,7 +5,7 @@ resource "aws_db_instance" "Test_SQLServer" {
   name                 = "mydb"
   username             = var.username
   password             = var.password
-  skip_final_snapshot  = true
+  skip_final_snapshot  = false
   storage_encrypted    = false
   backup_retention_period = 8
 }
