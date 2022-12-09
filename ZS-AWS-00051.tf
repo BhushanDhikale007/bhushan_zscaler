@@ -5,7 +5,7 @@ resource "aws_security_group" "example" {
 
   ingress {
     description      = "TLS from VPC"
-    from_port        = 3306
+    from_port        = 22
     to_port          = 3306
     protocol         = "tcp"
     cidr_blocks      = [aws_vpc.main.0.0.0.0/0]
