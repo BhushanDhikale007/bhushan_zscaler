@@ -8,7 +8,7 @@ resource "aws_security_group" "example" {
     from_port        = 443
     to_port          = 9200
     protocol         = "tcp"
-    cidr_blocks      = "0.0.0.0/0"]
+    cidr_blocks      = ["0.0.0.0/0"]
     ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
     
   }
