@@ -1,5 +1,4 @@
-data aws_vpc "main"
-{
+data aws_vpc "main"{
 cidr_block = ["0.0.0.0/0"]
 }
 resource "aws_security_group" "example" {
